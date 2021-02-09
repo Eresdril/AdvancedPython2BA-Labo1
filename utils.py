@@ -53,3 +53,5 @@ suite = unittest.TestLoader().loadTestsFromTestCase(Test)
 runner = unittest.TextTestRunner()
 print(runner.run(suite))
 
+
+pint('test')
