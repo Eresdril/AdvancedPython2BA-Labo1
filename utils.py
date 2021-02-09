@@ -40,3 +40,16 @@ if __name__ == '__main__':
 	print(fact(5))
 	print(roots(1, 0, 1))
 	print(integrate('x ** 2 - 1', -1, 1))
+
+
+import unittest
+import utils
+
+class Test(unittest.testCase):
+    def test_compute(self):
+        self.assertEqual(utils.fact(5), 120)
+
+suite = unittest.TestLoader().loadTestsFromTestCase(Test)
+runner = unittest.TextTestRunner()
+print(runner.run(suite))
+
